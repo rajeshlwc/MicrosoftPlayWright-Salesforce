@@ -10,7 +10,7 @@ let login = function(url,username,password,securitytoken) {
     }); 
 
     return new Promise(async (resolve, reject) => {
-        conn.login(username,password,
+        conn.login(username,password + securitytoken,
             function (err, userInfo) {
                 if(err)
                     console.log(err);

@@ -28,7 +28,7 @@ describe("Sales Cloud Testing", function (done){
                     }
             }
             await sf.newButtonClick(page);
-            await sf.recordTypeSelection(page,recType);
+           // await sf.recordTypeSelection(page,recType);
             for(var item of accounts){
                 if(item.Fields == 'RecordType'){
                     continue;
@@ -50,7 +50,7 @@ describe("Sales Cloud Testing", function (done){
                 }
         }
         await sf.newButtonClick(page);
-        await sf.recordTypeSelection(page,recType);
+       // await sf.recordTypeSelection(page,recType);
 
         for(var item of contacts){
             if(item.Fields == 'RecordType'){
@@ -73,7 +73,7 @@ describe("Sales Cloud Testing", function (done){
                 }
         }
         await sf.newButtonClick(page);
-        await sf.recordTypeSelection(page,recType);
+       // await sf.recordTypeSelection(page,recType);
 
         for(var item of opportunities){
             if(item.Fields == 'RecordType'){
@@ -87,6 +87,6 @@ describe("Sales Cloud Testing", function (done){
         await context.close();
 
         await browser.close();
-    });
+    }); 
 
 });

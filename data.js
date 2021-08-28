@@ -10,7 +10,8 @@ const excelToJson = require('convert-excel-to-json');
             columnToKey: {
                 A: 'Url',
                 B: 'UserName',
-                C:'Password'
+                C: 'Password',
+                D: 'SecurityToken'
             }
         },{
             name: 'Account',
